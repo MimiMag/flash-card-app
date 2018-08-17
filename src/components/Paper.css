@@ -1,0 +1,47 @@
+.paper {
+  width: 75%;
+  height: 50vh;
+  color: black;
+  box-shadow:
+    /* The top layer shadow */
+    0 -1px 1px rgba(0,0,0,0.15),
+    /* The second layer */
+    0 -10px 0 -5px black,
+    /* The second layer shadow */
+    0 -10px 1px -4px rgba(0,0,0,0.15),
+     /* The third layer */
+    0 -20px 0 -10px black,
+    /* The third layer shadow */
+    0 -20px 1px -9px rgba(0,0,0,0.15);
+  margin: auto;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+.button {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  border: solid 1px rgba(0, 0, 0, 0.651);
+  padding: 1rem;
+  margin: auto;
+  box-shadow: 3px 3px 3px rgba(0,0,0,0.15);
+}
+
+.button:hover { 
+  background-color: white;
+  box-shadow: 3px 3px 3px rgba(0,0,0,0,.20)
+}
+
+.button:active {
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+  transform: translateY(4px);
+}
+
+.check {
+  margin: auto;
+  font-size: 2.5rem;
+}
