@@ -27,7 +27,7 @@ class Back extends Component {
         </div>
         <div class="container">
           <h2>Variables & Data Types</h2>
-          <h4>Parse this code</h4>
+          <h4>Write the code</h4>
         </div>
       </div>
     );

@@ -9,91 +9,32 @@
 }
 .meter { 
   width: 90%;
-	height: 0.5rem;  /* Can be anything */
-	/* -moz-border-radius: 25px;
-	-webkit-border-radius: 25px; */
+	height: 0.5rem; 
   margin: auto;
 }
 
 .meter > span {
   display: block;
   height: 100%;
-  border-top-right-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
+  border-radius: 20px;
   background-color: #7AC74F;
-  background-image: linear-gradient(
-    center bottom,
-    #7AC74F 37%,
-    #A1CF6B 69%
-  );
   box-shadow: 
     inset 0 2px 9px  rgba(255,255,255,0.3),
     inset 0 -2px 6px rgba(0,0,0,0.4);
-  position: relative;
   overflow: hidden;
 }
 
-/* .meter > span:after {
-  content: "";
-  position: absolute;
-  top: 0; left: 0; bottom: 0; right: 0;
-  background-image: linear-gradient(
-    -45deg, 
-    rgba(255, 255, 255, .2) 25%, 
-    transparent 25%, 
-    transparent 50%, 
-    rgba(255, 255, 255, .2) 50%, 
-    rgba(255, 255, 255, .2) 75%, 
-    transparent 75%, 
-    transparent
-  );
-  z-index: 1;
-  background-size: 50px 50px;
-  animation: move 2s linear infinite;
-  border-top-right-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
-  overflow: hidden;
-} */
-
 .zero > span {
   background-color: #fff;
-  /* background-image: linear-gradient(to bottom, #f0a3a3, #f42323); */
 }
 
 .two > span {
   background-color: #E0C879;
   width: 60%;
-  /* background-image: linear-gradient(to bottom, #f1a165, #f36d0a); */
 }
 
 .one > span {
   background-color: #E87461;
   width: 30%;
-  /* background-image: linear-gradient(to bottom, #f0a3a3, #f42323); */
 }
 
-/* .animate > span:after {
-  display: none;
-} */
-
-/* @keyframes move {
-  0% {
-    background-position: 0 0;
-  }
-  100% {
-    background-position: 50px 50px;
-  }
-} */
-
-.meter > span:after, .animate > span > span {
-  animation: move 2s linear infinite;
-}
-
-@keyframes expandWidth {
-   0% { width: 0; }
-   100% { width: auto; }
-}
