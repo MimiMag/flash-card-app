@@ -1,11 +1,29 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
+import { connect } from 'react-redux'
 import './Front.css'
 
 class Front extends Component {
+
+
+  renderCode() {
+    const { levelOneData } = this.props
+    return(
+      <div className='text'>
+        <span className='var'>{levelOneData.var} </span> 
+        {`${levelOneData.name} = `}  
+        <span className={levelOneData.type}> 
+            {levelOneData.value}
+        </span>
+      </div>
+    )
+  }
+
   render() {
     return (
       <div>
-        <img src="https://cd.sseu.re/example.js__CodeCodaisseurTeachOtherFlashCard_2018-08-16_16-21-01.png" alt="Avatar" />
+        <div className='code'>
+          {this.renderCode()}
+        </div>
         <div class="container">
           <h2>Variables & Data Types</h2>
           <h4>Parse this code</h4>
@@ -15,4 +33,6 @@ class Front extends Component {
   }
 }
 
-export default Front;
+const mapStateToProps = ({levelOneData}) => ({levelOneData})
+
+export default connect(mapStateToProps)(Front)
