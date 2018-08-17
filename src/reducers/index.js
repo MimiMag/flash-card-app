@@ -5,5 +5,5 @@ import levelOneData from './levelOneData'
 
 export default combineReducers({
   progress,
-  levelOneData
+  levelOneData,
 })

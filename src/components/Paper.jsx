@@ -11,7 +11,6 @@ class Paper extends Component {
   state = { code: true }
 
   renderFrontOrBack() {
-
     if(this.state.code){ 
       return( 
         <div onClick={ () => {this.setState({code: false}) }}>
@@ -26,13 +25,23 @@ class Paper extends Component {
     )
   }
 
+  handleWrongButton() {
+    this.props.resetProgress()
+    this.setState({ code: true })
+  }
+
+  handleRightButton() {
+    this.props.increaseProgress()
+    this.setState({ code: true })
+  }
+
   render() {
     return (
       <div className="paper">
         {this.renderFrontOrBack()}
         <div className='buttons'>
-          <div className='button wrong' onClick={this.props.resetProgress}><span role='img' className='check'>&#10060;</span></div>
-          <div className='button right' onClick={this.props.increaseProgress}><span role='img' className='check'>&#10003;</span></div>
+          <div className='button wrong' onClick={this.handleWrongButton.bind(this)}><span role='img' className='check'>&#10060;</span></div>
+          <div className='button right' onClick={this.handleRightButton.bind(this)}><span role='img' className='check'>&#10003;</span></div>
         </div>
       </div>
     );
