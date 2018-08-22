@@ -25,7 +25,7 @@ class Back extends Component {
         <div className='code'>
           {this.renderCode()}
         </div>
-        <div class="container">
+        <div className="container">
           <h2>Variables & Data Types</h2>
           <h4>Write the code</h4>
         </div>

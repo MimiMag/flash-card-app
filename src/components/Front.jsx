@@ -24,7 +24,7 @@ class Front extends Component {
         <div className='code'>
           {this.renderCode()}
         </div>
-        <div class="container">
+        <div className="container">
           <h2>Variables & Data Types</h2>
           <h4>Parse this code</h4>
         </div>
