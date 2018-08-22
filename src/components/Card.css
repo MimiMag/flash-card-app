@@ -1,6 +1,6 @@
-.paper {
-  width: 75%;
-  height: 50vh;
+.card {
+  max-width: 75%;
+  min-width: 60%;
   color: black;
   box-shadow:
     /* The top layer shadow */
@@ -44,4 +44,18 @@
 .check {
   margin: auto;
   font-size: 2.5rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+@media (min-width: 1500px) {
+  .card {
+    min-width: 50%;
+  }
 }
