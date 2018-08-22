@@ -7,13 +7,13 @@ class Footer extends Component {
   chooseProgressLayout(progress) {
     switch (progress) {
       case 0:
-        return 'meter zero'
+        return 'progress zero'
       case 1:
-        return 'meter one'
+        return 'progress one'
       case 2:
-        return 'meter two'
+        return 'progress two'
       default:
-        return 'meter'
+        return 'progress'
     }
   }
 
