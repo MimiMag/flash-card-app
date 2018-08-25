@@ -1,11 +1,10 @@
 /* Source: https://css-tricks.com/css3-progress-bars/ */
 
 .Footer{
-  /*  */
   width: 100%;
   padding: 2rem 0;
+  margin-top: 2rem;
 }
-
 
 .progress { 
   width: 80%;
@@ -40,14 +39,13 @@
 
 @media (min-height: 640px) {
   .Footer {
-    position: absolute;
     left: 0rem;
     bottom: 0rem;
   }
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 1000px) {
   .progress {
-    max-width: 60%;
+    max-width: 50%;
   }
 }

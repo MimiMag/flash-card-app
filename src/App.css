@@ -2,5 +2,13 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+}
+
+@media (min-width: 1500px) {
+  .App {
+    max-width: 50%;
+    height: 90vh;
+    margin: auto;
+    border: 1px black solid;
+  }
 }

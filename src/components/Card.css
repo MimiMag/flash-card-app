@@ -54,7 +54,7 @@
   display: block;
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 1000px) {
   .card {
     min-width: 50%;
   }

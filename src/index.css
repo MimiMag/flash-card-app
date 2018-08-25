@@ -4,3 +4,9 @@ body {
   font-family: "Courier New", Courier, monospace;
   font-size: 1rem;
 }
+
+@media (min-width: 1000px) {
+  body {
+    padding: 1rem;
+  }
+}
